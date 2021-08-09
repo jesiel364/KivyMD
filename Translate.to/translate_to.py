@@ -35,10 +35,10 @@ class translate_to(MDApp):
 		label = self.root.ids.label.text
 
 		try:
-			with open('file.txt', 'w') as f:
-				f.write(label)
+			with open('file.txt', 'a') as f:
+				f.write(f'{label}\n')
 				f.close()
-				print('Arquivo \"file.txt\" salvo!')
+				print('Arquivo \"file.txt\" salvo!\n')
 		except Exception as e:
 			print(e)
 			print('Ñão foi possivel salvar o arquivo')
