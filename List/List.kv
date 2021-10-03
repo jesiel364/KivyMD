@@ -1,0 +1,39 @@
+MDBoxLayout:
+	orientation: 'vertical'
+
+	MDToolbar:
+		title: 'ScrollView'
+		md_bg_color: .2,.2,.2,1
+
+	MDBottomNavigation:
+
+		MDBottomNavigationItem:
+			name: 'tela1'
+			title: 'Home'
+			icon: 'home'
+
+			ScrollView:
+				MDList:
+					id: container
+
+		MDBottomNavigationItem:
+			name: 'tela2'
+			title: 'Settings'
+			icon: 'cog'
+			
+			ScrollView:
+				MDList:
+
+					TwoLineAvatarListItem:
+    					text: "Jasiel"
+    					secondary_text: 'Hey, lets murphy'
+
+    					ImageLeftWidget:
+        					source: "data/logo/kivy-icon-256.png"
+
+        			TwoLineIconListItem:
+        				text: 'Geziele'
+        				secondary_text: 'Hey Bro!!'
+
+        				IconLeftWidget:
+        					icon: 'language-python'

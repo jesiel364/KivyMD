@@ -1,0 +1,15 @@
+MDBoxLayout:
+	orientation: 'vertical'
+
+	MDToolbar:
+		title: 'Menu Lateral'
+		md_bg_color: .2,.2,.2,1
+
+		left_action_items: [['menu', lambda x: app.callback(x)]]
+		right_action_items: [['dots-vertical']]
+
+	MDLabel:
+		id: my_label
+		text: 'Conteúdo'
+		halign: 'center'
+
